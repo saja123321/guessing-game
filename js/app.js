@@ -78,6 +78,6 @@ if (check.toLowerCase() == 'y' || check.toLowerCase() == 'yes'){
   //  console.log("you type no");
 }else {
     //  console.log("Wrong answer");
-    alert(" Wrong answer " + userName + ":D")
+    alert("Wrong answer "+ userName + ":D")
   
   }
