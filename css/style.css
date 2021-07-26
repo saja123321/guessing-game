@@ -32,8 +32,16 @@ h1{
 body{
     background-color:burlywood;
 }
+h4{
+    text-align: center;
+}
 .exp{
-    width: 40%;
+    width: 35%;
+    left:  50%;
+    margin: auto;
     align-items: center;
-    
+    margin-top: 3%;
+    border: brown 7px inset  ;
+border-radius: 10%;
+padding: 2%;
 }
