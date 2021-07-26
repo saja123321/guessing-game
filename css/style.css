@@ -13,12 +13,27 @@ header ul li{
 #blank{
     width: 1100px;
 }
-p{
-    width: 200;
+h1{
+    color: brown;
+}
+
+.p1{   
     text-align: left;
     font-size: 27px;
-    padding: 50px;
+   
+}
+.head{
+ border: 3px dashed brown;
+  padding-left: 4%; 
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom:2% ;
 }
 body{
     background-color:burlywood;
+}
+.exp{
+    width: 40%;
+    align-items: center;
+    
 }
