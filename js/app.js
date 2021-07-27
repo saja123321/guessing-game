@@ -115,10 +115,10 @@ while (!isGuessed && numberofguesses < 6) {
             score++;
             break;
         } 
-        /*else {
-           console.log(guess + ' != ' + lukyNum[index])
+        // else {
+        //    console.log(guess + ' != ' + lukyNum[index])
 
-        }*/
+        // }
 
     }
     if (!isGuessed && numberofguesses < 6) {
@@ -132,9 +132,10 @@ let guessingNum = prompt('Let\'s Play a guessing game.. try to guess a number in
 while (!guessingNum) {
     guessingNum = prompt('please enter a number');
 }
-let myNum = '33';
+let myNum = Math.floor(Math.random() * (50 - 0) + 0);
+console.log(myNum+ " ");
 for (let i = 0; i < 4; i++) {
-    if (guessingNum === myNum) {
+    if (Number(guessingNum) === myNum) {
         score++;
         break;
     } else if (guessingNum > myNum) {
