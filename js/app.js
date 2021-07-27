@@ -3,7 +3,7 @@
 let userName, check;
 let score = 0;
 let guessOut = false;
-let lukyNums = [55, 22, 2, 12, 10];
+let lukyNum = [55, 22, 2, 12, 10];
 
 userName = prompt('Whats Your name :');
 
@@ -99,8 +99,6 @@ if (check.toLowerCase() === 'y' || check.toLowerCase() === 'yes') {
 }
 
 // Q7
-let guessing = prompt('Tru to guess one of my lucky numbers')
-let lukyNum = [1, 2, 3, 4];
 let guess = prompt('Try to guess one of my lucky numbers')
 let numberofguesses = 0;
 let isGuessed;
@@ -111,14 +109,16 @@ while (!isGuessed && numberofguesses < 6) {
 
     for (let index = 0; index < lukyNum.length; index++) {
         if (parseInt(guess) == lukyNum[index]) {
-            alert("You guessed the correct number." + guess + ' = ' + lukyNum[index]);
+            alert("You guessed the correct number.");
             isGuessed = true;
-            alert('It took you' + numberofguesses + 'tries to guess the correct number!');
+            alert('It took you ' + numberofguesses + ' tries to guess the correct number!');
+            score++;
             break;
-        } else {
-            console.log(guess + ' != ' + lukyNum[index])
+        } 
+        /*else {
+           console.log(guess + ' != ' + lukyNum[index])
 
-        }
+        }*/
 
     }
     if (!isGuessed && numberofguesses < 6) {
@@ -168,3 +168,4 @@ if (check.toLowerCase() === 'y' || check.toLowerCase() === 'yes') {
     alert('Wrong answer ' + userName + ':D your scoor is ' + score);
 
 }
+
