@@ -4,7 +4,7 @@ let userName, check;
 let score = 0;
 let guessOut = false;
 let lukyNum = [55, 22, 2, 12, 10];
-
+let answers = ` I didnt like animes ,  I like reading books , I like Watching movies ,I like cooking , the luky numbers is ${lukyNum}`
 userName = prompt('Whats Your name :');
 
 while (!userName) {
@@ -144,7 +144,7 @@ for (let i = 0; i < 4; i++) {
         alert('too low');
     }
     if (i == 3) {
-        alert('looser');
+        alert(`looser, the number is ${myNum} ` );
         break;
     }
     guessingNum = prompt('Wrong .. try to guess another number in my mind');
@@ -162,10 +162,13 @@ if (check.toLowerCase() === 'y' || check.toLowerCase() === 'yes') {
     //  console.log("you type yes");
     alert('thank you ' + userName + ' :D your scoor is ' + score);
 } else if (check.toLowerCase() === 'n' || check.toLowerCase() === 'no') {
-    alert('OK  =( , thank you ' + userName + ' :D your scoor is ' + score);
+    alert('OK  =( , thank you ' + userName );
     //  console.log("you type no");
 } else {
     //  console.log("Wrong answer");
-    alert('Wrong answer ' + userName + ':D your scoor is ' + score);
+    alert('Wrong answer ' + userName);
 
 }
+
+alert ( `:D your scoor is ${score}`) 
+alert(answers);
