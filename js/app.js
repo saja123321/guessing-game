@@ -169,4 +169,3 @@ if (check.toLowerCase() === 'y' || check.toLowerCase() === 'yes') {
     alert('Wrong answer ' + userName + ':D your scoor is ' + score);
 
 }
-
