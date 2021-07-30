@@ -17,11 +17,15 @@ footer ol li {
 }
 
 #blank {
-    width: 1000px;
+    width: 900px;
 }
 
 h1 {
+
     color: brown;
+    border: 1px coral groove;
+    padding: 10px;
+
 }
 
 .head {
